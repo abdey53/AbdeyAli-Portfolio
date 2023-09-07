@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+        overflow-x: hidden;
+    }
+    body{
+        background: rgb(0, 0, 34);
+        color: white;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #0b0330;
+        height: 55px;
+        overflow: hidden;
+    }
+    .rightside ul{
+display: flex;
+list-style: none;
+margin-top: 15px;
+}
+nav ul li{
+        margin: 23px;
+    }
+nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+nav ul li a:hover{
+        color: rgb(155, 152, 146);
+    }
+    /* ------------------------------------------------------- */
+    .firstsection{
+        display:flex;
+        justify-content: space-around;
+        /* margin-top: 80px; */
+    }
+    .firstsection > div{
+        /* width: 30%; */
+    }
+    .leftsection{
+/* background-color: red; */
+font-size: 3rem;
+margin-top: 130px;
+line-height: 60px;
+}
+    .leftsection .btn{
+padding: 10px;
+background-color: #3d24aa;
+border: 2px solid white;
+color: aliceblue;
+border-radius: 6px;
+font-size: large;
+/* cursor: pointer; */
+
+}
+.leftsection .buttons{
+padding-top: 40px;
+}
+.rightsection{
+        /* background-color: red; */
+        margin-top: 22px;
+        
+    }
+    img{
+        height: 550px;
+        width: 350px;
+        /* color: white; */
+        border: 1px solid white;
+margin-bottom: 0%;
+padding: 0;
+    }
+    .purple{
+color: rgb(166, 106, 223);
+}
+#element{
+        color: rgb(166, 106, 223);
+    }
+    footer{
+        background-color: rgb(12, 12, 54);
+        margin-top: 150px;
+        /* height: 233px; */
+        
+    }
+    footer h3{
+        padding: 20px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer ul{
+        list-style: none;
+
+    }
+    footer > div{
+        margin-top:10px;
+        justify-content: space-between;
+    }
+    footer .footer-rights{
+        text-align: center;
+        color: grey;
+    }
+    /* -------------------------aboutme--------------------------- */
+     .aboutrl{
+display: flex;
+justify-content: space-around;
+margin-top: 30px;
+color: white;
+}
+.aboutheading{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 5px;
+border: 1px solid white;
+}
+.aboutleft{
+    /* background-color: azure; */
+    width: 500px;
+    font-size: 35px;
+    
+}
+.aboutright{
+    /* background-color: azure; */
+    width: 500px;
+    }
+    .aboutbtn{
+        background-color:orangered;
+        padding: 10px;
+        border-radius: 18px;
+        border: 2px solid white;
+        font-size: 15px;
+    }
+    .frontendimg img{
+height: 50px;
+width: 50px;
+}
+.frontendimg , .names{
+    display: flex;
+}
+
+.feimage{
+    margin-left: 50px;
+    
+margin-top: 20px;
+    }
+   .names  h6{
+    overflow: hidden;
+    /* width: 100px; */
+    }
+    /* -----------contact me---------------------------------------------------------------------------------------------------------------- */
+    .contactheader{
+        text-align: center;
+        font-size: 20px;
+background-color: #0b0330;
+margin-top: 20px;
+padding: 5px;
+border: 1px solid white;
+    }
+    .contactimg{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    .contactimg img{
+        height: 50px;
+        width: 70px;
+        border: 1px solid black;
+    }
+    .contactimg  div {
+        overflow-y: hidden;
+    }
+    .email,.phone,.location{
+        /* background-color: aliceblue; */
+        height: 60px;
+        width: 80px;
+        
+    }
+    .contactimgwords{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .contactlr{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .contactleft{
+        background-color: rgb(240, 248, 255);
+        width: 450px;
+        height: 350px;
+        margin-right: 10px;
+    }
+    .contactright{
+        background-color: rgb(42, 83, 121);
+        width: 450px;
+        height: 350px;
+        overflow: hidden;
+
+    }
+    .contactright input ,textarea{
+        background-color: rgb(205, 202, 202);
+    }
+    .socialmedia{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .socialmedia .so-me img{
+        margin-right: 20px;
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+    }
+    /* -----------------projects css------------------------------------ */
+    .projectheader{
+        text-align: center;
+        background-color: #0b0330;
+margin-top: 20px;
+padding: 5px;
+border: 1px solid white;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="leftside" style="font-size: 25px;">AbdeyAli_Portfolio</div>
+            <div class="rightside">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="About Me">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Heyy, My Name is <span class="purple"> AbdeyAli</span>
+                <div  style="overflow: hidden;">and Iam a passionate</div>
+                <span id="element"></span>
+<div class="buttons">
+    <button class="btn" >Download Resume</button>
+    <button class="btn" onclick="github()">Visit GitHub</button>
+</div>
+            </div>
+            <div class="rightsection">
+                <img src="crop2.png" alt="">
+            </div>
+        </section>
+        <!-- -------------------------------about-------------------------------------- -->
+<div class="secondsection">
+    <div class="aboutheading">
+        <h1 style="overflow: hidden;"><a href="About Me">About Me</a></h1>
+    </div>
+    <div class="aboutrl">
+        <div class="aboutleft">My journey in the world of programming Began in 2022, 
+            and i will learn many languages , Front End , Tools to improving coad and etc
+            and also other skills i will improve like communication skills , leadership skills and other soft skills.
+            <br>
+            <button class="aboutbtn" >Download Resume</button>
+
+        </div>
+        <div class="aboutright">
+            <div class="frontend">
+                <h2 style="overflow: hidden;">Front End</h2>
+                <div class="frontendimg">
+                    <img  style="margin-top: 21px;" src="frontendimage\csslogo.png" alt="">
+                    <img class="feimage" src="frontendimage\htmllogo.png" alt="">
+                    <img class="feimage" src="frontendimage\javascriptlogo.jpeg" alt="">
+                    <img class="feimage" src="frontendimage\reactlogo.jpeg" alt="">
+                    <img class="feimage" src="frontendimage\bootstrap-logo.png" alt="">
+                </div>
+                <div class="names" style="margin-top: 8px;">
+                    <h6 style="margin-left: 10px;" class="overflow-hidden">CSS</h6>
+                    <h6 style="margin-left: 68px;" class="logoname">HTML</h6>
+                    <h6  style="margin-left: 43px;" class="logoname">Javascript</h6>
+                    <h6 style="margin-left: 37px;" class="logoname">ReactJs</h6>
+                    <h6 style="margin-left: 35px;"class="logoname">Bootstraps</h6>
+                </div>
+            </div>
+           
+            <div class="Tools">
+                <h2 style="margin-top: 20px; overflow: hidden;">Tools</h2>
+                <div class="frontendimg">
+                    <img  style="margin-top: 21px;" src="toolsimage\git-logo.png" alt="">
+                    <img class="feimage" src="toolsimage\git2-logo.webp" alt="">
+                    <img class="feimage" src="toolsimage\visual-studio-logo.png" alt="">
+                </div>
+                <div class="names" style="margin-top: 8px;">
+                    <h6 style="margin-left: 15px;overflow: hidden; " class="">Git</h6>
+                    <h6 style="margin-left: 62px;" class="logoname">Github</h6>
+                    <h6  style="margin-left: 30px;" class="logoname">Visual studio</h6>
+                </div>
+            </div>
+
+            <div class="communication">
+                <h2 style="margin-top: 20px; overflow: hidden;">Communication</h2>
+                <div class="frontendimg">
+                    <img  style="margin-top: 21px;" src="coomunicationimage\zoom-logo.jpeg" alt="">
+                    <img class="feimage" src="coomunicationimage\googlemeet-logo.png" alt="">
+                </div>  
+                <div class="names" style="margin-top: 8px;">
+                    <h6 style="margin-left: 5px;" class="logoname">Zoom</h6>
+                    <h6 style="margin-left: 30px; overflow: hidden;" class="">Google Meet</h6>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+<!-- -------------------------------Projects-------------------------------------------------------------------->
+<div class="thirdsection">
+    <div class="projectheader">
+        <h1 style="overflow: hidden;">My Projects</h1>
+    </div>
+    <div class="cardsection1 d-flex justify-content-center">
+        <div class="card me-3 mt-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Projects title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card me-3 mt-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Projects title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card mt-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Projects title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+    </div>
+    <div class="cardsection2 d-flex justify-content-center">
+        <div class="card me-3 mt-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Projects title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card me-3 mt-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Projects title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+          <div class="card mt-5" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Projects title</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+    </div>
+</div>
+<!-- -------------------------contact us---------------------------------------------------- -->
+<div class="thirdsection">
+    <div class="contactheader">
+        <h1 style="overflow: hidden;">Contact ME</h1>
+    </div>
+    <div class="contactimg">
+<div class="email">
+<img src="contact-images\email-logo.png" alt="">
+</div>
+<div class="phone">
+    <img src="contact-images\phone-logo.png" alt="">
+</div>
+<div class="location">
+    <img src="contact-images\location-logo.png" alt="">
+</div>
+    </div>
+    <div class="contactimgwords">
+        <div class="words">abdeali535353@gmail.com</div>
+        <div style="margin-right: 15px;" class="words">+91 786 987 5252</div>
+        <div style="margin-right: 30px;" class="words">Manpura haji chowk <br> wardno.5 , 461331</div>
+    </div>
+
+    <div class="contactlr">
+        <div class="contactleft">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29521.089536140527!2d77.07038190906175!3d22.34848584768903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397d70da30805abf%3A0x1368c14a9092d58b!2sHarda%2C%20Madhya%20Pradesh%20461331!5e0!3m2!1sen!2sin!4v1694024697330!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+            
+        <div class="contactright">
+            <input style="margin-top: 10px; margin-left: 30px; padding: 10px; border: solid 3px white;" type="text" name="name" placeholder="Enter Name" size="45px" height="30px">
+            <input style="margin-top: 10px;  margin-left: 30px; padding: 10px; border: solid 3px white;" type="text" name="name" placeholder="Email Address" size="45px" height="30px">
+            <textarea style="margin-top: 10px;  margin-left: 30px; padding: 10px; border: solid 3px white;" name="message" id="area" cols="48" rows="6" placeholder="Message"></textarea>
+            <button style="width: 395px; height: 35px; margin-left: 30px; margin-top: 6px; font-size: 20px; background-color: rgb(174, 169, 207); overflow: hidden;" >Submit</button>
+        </div>
+    </div>
+    <div class="socialmedia">
+        <div class="so-me">
+            <a href="https://www.instagram.com/abdey8429_/"><img src="socialmedia-image\instagram-logo.jpeg" alt=""></a>
+        </div>
+        <div class="so-me">
+            <a href="https://www.linkedin.com/feed/"><img src="socialmedia-image\linkedin-logo.png" alt=""></a>
+        </div>
+        <div class="so-me">
+            <a href="https://www.facebook.com/"><img src="socialmedia-image\facebook-logo.jpeg" alt=""></a>
+        </div>
+    </div>
+</div>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerfirst">
+                <h3>Abdeyali Developer Portfolio</h3>
+            </div>
+            <div class="footersecond">
+                <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact me</li>
+</ul>
+</div>
+            <div class="footerthird">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+            <div class="footerfourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.abdeyaliportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <!-----------------------------------------script--------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Programmer','Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+      <script  src="porfolio.js">
+        github=()=>{
+window.open("https://github.com/abdey53","_blank")
+}
+github();
+      </script>
+</body>
+</html>
